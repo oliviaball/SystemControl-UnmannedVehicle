@@ -1,0 +1,9 @@
+# SystemControl-UnmannedVehicle
+
+The project was split up into 3 different milestones each of which had a different objective. The MatLAB code has to be ran before the Simulink model can be ran. There are comments within the code to say which sections need to be ran in which order. 
+
+Milestone 1 - The goal of this assignment was to derive a 7-state model and a 5-state model for an unmanned vehicle (UV) that consists of two driving wheels and one caster wheel. The overall system dynamics can be represented through a series of first-order differential equations. Since each wheel is driven by a DC motor, we will need to observe the dynamics of both wheels (right and left). 
+
+Milestone 2 - The goal of the assignment is to analyze the unmanned vehicle (UV) dynamics to draw conclusions about the controllability, observability, stability and system modes of the 5-state model. Our model is nonlinear, due to the terms cos⁡(θ) and sin⁡(θ), which means the model needs to be linearized. There are two different approaches that can be used to obtain the linearized model that will both provide the same results – Taylor series approach and trig approximation. Once these concepts are understood, the information will be used to draw real life conclusions about how noise and disturbances affect the dynamics of the UV.
+
+Milestone 3 - The final portion of this project required that the unmanned vehicle moved from an initial position to a desired position by pole placement.  The use of pole placement allows us to design a state feedback loop and then design an observer. The poles define the systems eigenvalues, but they may not always appear as poles as pole cancelation sometimes occurs. In order to model the system moving from one position to the next, the model will be converted into polar coordinates. By using the polar coordinates, we are able to better track the movement of the UV over time. 
